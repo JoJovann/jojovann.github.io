@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+		body {
+			background-image: url("circle.svg");
+			background-size: 40px;
+			background-color: #ffd8d8;
+			background-repeat: repeat;
+
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 4em;
+			color: #620808;
+		}
+
+		.center{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		a {
+			color:inherit;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<a href="https://www.instagram.com/jojovan._/" style="text-decoration: none;">
+			<div><img src="allmight.png" width="1080px"/></div>
+			<div id="bottomTxt"></div>
+		</a>
+	</div>
+
+	<script>
+		function randOct() {
+			return Math.floor(Math.random() * 255) + 1;
+		}
+
+		bottomTxt = document.getElementById("bottomTxt");
+		bottomTxt.innerHTML = randOct() + "." + randOct() + "." + randOct() + "." + randOct();
+	</script>
+</body>
+</html>
